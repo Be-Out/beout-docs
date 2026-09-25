@@ -29,7 +29,7 @@ Si preferís monorepo, podés poner esta carpeta como `docs/` dentro de `beout` 
    - **Build command:** `npm run build`
    - **Build output directory:** `site`
    - **Root directory:** `/` (o `docs` si es monorepo)
-   - **Node version:** `20` (Variable `NODE_VERSION=20` o `.node-version` con `20`)
+   - **Node version:** `22` (Variable `NODE_VERSION=22` o `.node-version` con `22`)
 4. **Save and Deploy**.
 
 Cada push a `main` redespliega solo.
