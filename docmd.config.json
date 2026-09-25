@@ -1,0 +1,130 @@
+{
+  "title": "Documentación BeOut",
+  "url": "https://docs.beout.app",
+  "src": ".",
+  "out": "site",
+  "engine": "js",
+  "layout": {
+    "spa": true,
+    "header": {
+      "enabled": true
+    },
+    "sidebar": {
+      "collapsible": true,
+      "defaultCollapsed": true
+    },
+    "optionsMenu": {
+      "position": "sidebar-top",
+      "components": {
+        "search": true,
+        "themeSwitch": true
+      }
+    },
+    "footer": {
+      "style": "minimal",
+      "content": "© 2026 BeOut.",
+      "branding": true
+    }
+  },
+  "theme": {
+    "name": "default",
+    "appearance": "system",
+    "codeHighlight": true
+  },
+  "minify": true,
+  "autoTitleFromH1": true,
+  "copyCode": true,
+  "pageNavigation": true,
+  "navigation": [
+    {
+      "title": "Inicio",
+      "path": "/",
+      "icon": "home"
+    },
+    {
+      "title": "Primeros pasos",
+      "path": "/primeros-pasos/",
+      "icon": "rocket",
+      "collapsible": true,
+      "children": [
+        {
+          "title": "Instalación",
+          "path": "/primeros-pasos/instalacion"
+        },
+        {
+          "title": "Variables de entorno",
+          "path": "/primeros-pasos/variables-entorno"
+        }
+      ]
+    },
+    {
+      "title": "Arquitectura",
+      "path": "/arquitectura/",
+      "icon": "server",
+      "collapsible": true,
+      "children": [
+        {
+          "title": "Stack",
+          "path": "/arquitectura/stack"
+        },
+        {
+          "title": "Estructura del proyecto",
+          "path": "/arquitectura/estructura"
+        }
+      ]
+    },
+    {
+      "title": "API",
+      "path": "/api/",
+      "icon": "code",
+      "collapsible": true,
+      "children": [
+        {
+          "title": "POST /api/subscribe",
+          "path": "/api/subscribe"
+        }
+      ]
+    },
+    {
+      "title": "Diseño",
+      "path": "/diseno/",
+      "icon": "palette",
+      "collapsible": true,
+      "children": [
+        {
+          "title": "Brief de landing",
+          "path": "/diseno/brief-landing"
+        }
+      ]
+    },
+    {
+      "title": "Deploy",
+      "path": "/deploy/",
+      "icon": "cloud",
+      "collapsible": true,
+      "children": [
+        {
+          "title": "Landing en Workers",
+          "path": "/deploy/cloudflare-workers"
+        },
+        {
+          "title": "Esta docs en Pages",
+          "path": "/deploy/cloudflare-pages-docs"
+        }
+      ]
+    }
+  ],
+  "plugins": {
+    "ai": {
+      "assistant": true,
+      "projectId": ""
+    },
+    "git": {
+      "commitHistory": true,
+      "maxCommits": 5
+    },
+    "seo": {
+      "defaultDescription": "Documentación técnica de BeOut: landing, lista de espera y deploy en Cloudflare."
+    }
+  }
+}
