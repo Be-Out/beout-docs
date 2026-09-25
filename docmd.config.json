@@ -42,6 +42,50 @@
       "icon": "home"
     },
     {
+      "title": "Landing",
+      "path": "/landing/",
+      "icon": "globe",
+      "collapsible": true,
+      "children": [
+        {
+          "title": "Estructura y stack",
+          "path": "/landing/estructura"
+        },
+        {
+          "title": "Secciones de la página",
+          "path": "/landing/secciones"
+        },
+        {
+          "title": "Lista de espera",
+          "path": "/landing/lista-espera"
+        }
+      ]
+    },
+    {
+      "title": "App iOS",
+      "path": "/app-ios/",
+      "icon": "smartphone",
+      "collapsible": true,
+      "children": [
+        {
+          "title": "Arquitectura",
+          "path": "/app-ios/arquitectura"
+        },
+        {
+          "title": "Dominio y backend",
+          "path": "/app-ios/dominio-backend"
+        },
+        {
+          "title": "Pantallas",
+          "path": "/app-ios/pantallas"
+        },
+        {
+          "title": "Bloqueo y desafíos",
+          "path": "/app-ios/bloqueo-desafios"
+        }
+      ]
+    },
+    {
       "title": "Primeros pasos",
       "path": "/primeros-pasos/",
       "icon": "rocket",

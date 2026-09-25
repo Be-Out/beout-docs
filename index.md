@@ -14,6 +14,8 @@ Repo principal: [Be-Out/beout](https://github.com/Be-Out/beout).
 ## Secciones
 
 * [Primeros pasos](primeros-pasos/index.md) - Instalación y variables de entorno.
+* [Landing](landing/index.md) - Cómo está armada la landing page.
+* [App iOS](app-ios/index.md) - Arquitectura Swift, pantallas y bloqueo.
 * [Arquitectura](arquitectura/index.md) - Stack y estructura del proyecto.
 * [API](api/index.md) - Endpoint de lista de espera.
 * [Diseño](diseno/index.md) - Brief, tono y dirección visual.
