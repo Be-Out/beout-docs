@@ -34,15 +34,22 @@ Si preferís monorepo, podés poner esta carpeta como `docs/` dentro de `beout` 
 
 Cada push a `main` redespliega solo.
 
-## 3. Por qué `_redirects`
+## 3. Por qué NO lleva `_redirects`
 
-`docmd.config.json` usa `"spa": true`, así que la navegación es client-side. El archivo `_redirects` en la raíz:
-
-```
-/* /index.html 200
-```
-
-se copia a `site/_redirects` en `npm run build` (`cp -f _redirects site/_redirects`) para que Pages resuelva todas las rutas al `index.html`.
+> Si venís de Pages clásico: no uses `/* /index.html 200`. En Workers Static Assets esa regla da error `100324 Infinite loop detected` y rompe el deploy.
+>
+> El fallback SPA se configura en `wrangler.jsonc`:
+>
+> ```jsonc
+> {
+>   "assets": {
+>     "directory": "site",
+>     "not_found_handling": "single-page-application"
+>   }
+> }
+> ```
+>
+> Con eso, las rutas client-side de docmd (`"spa": true`) resuelven a `index.html` sin `_redirects`.
 
 ## 4. Dominio propio (opcional)
 

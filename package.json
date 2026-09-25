@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "docmd dev",
-    "build": "docmd build && cp -f _redirects site/_redirects",
+    "build": "docmd build",
     "preview": "npx serve site"
   },
   "dependencies": {
