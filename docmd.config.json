@@ -42,6 +42,46 @@
       "icon": "home"
     },
     {
+      "title": "BeOut Block",
+      "path": "/beout-block/",
+      "icon": "smartphone",
+      "collapsible": true,
+      "children": [
+        {
+          "title": "Arquitectura",
+          "path": "/beout-block/arquitectura"
+        },
+        {
+          "title": "Dominio y backend",
+          "path": "/beout-block/dominio-backend"
+        },
+        {
+          "title": "Pantallas",
+          "path": "/beout-block/pantallas"
+        },
+        {
+          "title": "Bloqueo y desafíos",
+          "path": "/beout-block/bloqueo-desafios"
+        }
+      ]
+    },
+    {
+      "title": "BeOut Move",
+      "path": "/beout-move/",
+      "icon": "activity",
+      "collapsible": true,
+      "children": [
+        {
+          "title": "Arquitectura",
+          "path": "/beout-move/arquitectura"
+        },
+        {
+          "title": "Supabase",
+          "path": "/beout-move/supabase"
+        }
+      ]
+    },
+    {
       "title": "Landing",
       "path": "/landing/",
       "icon": "globe",
@@ -58,30 +98,6 @@
         {
           "title": "Lista de espera",
           "path": "/landing/lista-espera"
-        }
-      ]
-    },
-    {
-      "title": "App iOS",
-      "path": "/app-ios/",
-      "icon": "smartphone",
-      "collapsible": true,
-      "children": [
-        {
-          "title": "Arquitectura",
-          "path": "/app-ios/arquitectura"
-        },
-        {
-          "title": "Dominio y backend",
-          "path": "/app-ios/dominio-backend"
-        },
-        {
-          "title": "Pantallas",
-          "path": "/app-ios/pantallas"
-        },
-        {
-          "title": "Bloqueo y desafíos",
-          "path": "/app-ios/bloqueo-desafios"
         }
       ]
     },
@@ -168,7 +184,7 @@
       "maxCommits": 5
     },
     "seo": {
-      "defaultDescription": "Documentación técnica de BeOut: landing, lista de espera y deploy en Cloudflare."
+      "defaultDescription": "Documentación técnica de BeOut: apps iOS (Block y Move), landing y deploy en Cloudflare."
     }
   }
 }

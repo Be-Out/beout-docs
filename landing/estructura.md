@@ -6,7 +6,7 @@ description: Next.js, componentes, assets y archivos de la landing BeOut.
 
 # Estructura y stack de la landing
 
-Código local: `Escritorio/allProject/beout`.
+Repo: [Be-Out/beout](https://github.com/Be-Out/beout) (local: `BEOUT_LANDING`, default `../beout-landing`).
 
 ## Stack
 
