@@ -34,6 +34,7 @@ Patrón: **MVVM** con `ObservableObject` + `@Published`, ViewModels `@MainActor`
 - **AppLimitsManager** — bloqueos temporarios: `setLimits(_)` pone shields, programa el desbloqueo y abre sesión; `removeAllLimits()` limpia y cierra sesión.
 - **PurchaseManager** — wrapper mínimo de RevenueCat: `isPro` espeja `profiles.plan`, `restorePurchases()`.
 - **Supabase** — cliente global (`SupabaseClient`) al proyecto `fygzwsegogzqgerjazet`.
+- **NotificationManager** — gestiona el ciclo de vida de las cuatro notificaciones configurables (recordatorio de racha, límite próximo, resumen diario/semanal, hitos de racha): programa, cancela y valida permisos con `UNUserNotificationCenter`. Expone `checkAndFireMilestone(streak:)` para hitos y `scheduleAll()` / `cancelAll()` para reconstruir el calendario al cambiar ajustes.
 - **Theme** — design system: colores tierra + tipografía rounded.
 
 ## Targets y capabilities
